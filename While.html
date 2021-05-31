@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script>
+function show(){
+ 
+var i=1, no, fact;
+fact=1;
+no=Number(document.getElementById("num").value);
+do
+    {
+        fact=fact*i;
+        i++;
+		
+    }
+	while(i<=no);
+	
+	document.getElementById("answer").value= fact;
+	}
+	
+</script>
+</head>
+<body class="buttonhome">
+Enter Num: <input id="num"></br></br>
+<button class="buttonhome" onClick="show()">Factorial</button>
+<input id="answer">
+</body>
+</html>
